@@ -1,0 +1,115 @@
+.slick-dots {
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+    padding: 0;
+    list-style: none;
+    position: relative;
+    counter-reset: li;
+}
+
+.slick-dots li {
+    position: relative;
+
+    &::before {
+        content: "0" counter(li);
+        counter-increment: li;
+        position: absolute;
+        padding: 26px 10px 0 10px;
+        font-family: "Avenir Next Cyr";
+        font-size: 12px;
+        line-height: 140.69%;
+        color: #e4e4e4;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 9px;
+        right: -1px;
+        z-index: 10;
+        width: 1px;
+        height: 12px;
+        background: #e4e4e4;
+        opacity: 0.2;
+        transform: rotate(90deg);
+    }
+}
+
+.slick-dots button {
+    position: relative;
+    background: #e4e4e4;
+    border: none;
+    border-radius: 50%;
+    font-size: 0;
+    width: 10px;
+    height: 10px;
+    margin: 10px;
+    outline: none;
+}
+
+.slick-dots li[class="slick-active"] button {
+    background: #4299ff;
+
+    &::after {
+        content: "";
+        width: 18px;
+        height: 18px;
+        border: 1px dashed #4299ff;
+        border-radius: 50%;
+        position: absolute;
+        top: -5px;
+        left: -4px;
+    }
+}
+
+/* 
+@media (min-width: 768px) {
+    .slick-dots {
+        position: absolute;
+        z-index: 1;
+        top: 33%;
+        right: -14%;
+        transform: rotate(90deg);
+    }
+
+    .slick-dots li::before {
+        left: -40%;
+        top: 47%;
+        transform: rotate(270deg);
+    }
+
+    .slick-slide img {
+        width: 100%;
+    }
+
+    .slick-next.slick-arrow {
+        left: 93.6%;
+        transform: rotate(-90deg);
+        top: 59%;
+    }
+
+    .slick-prev.slick-arrow {
+        left: 92.3%;
+        transform: rotate(90deg);
+        top: 18%;
+    }
+} */
+
+/* @media (min-width: 1200px) {
+    .slick-dots {
+        top: 40%;
+        right: -7%;
+    }
+
+    .slick-next.slick-arrow {
+        left: 94.7%;
+        top: 57%;
+    }
+
+    .slick-prev.slick-arrow {
+        left: 94%;
+        top: 30%;
+    }
+}
+ */

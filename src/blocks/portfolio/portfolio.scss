@@ -1,0 +1,140 @@
+.portfolio {
+    padding: 0 20px;
+    padding-top: 40px;
+    margin-bottom: 93px
+}
+
+.portfolio__list {
+    @include list-reset;
+    counter-reset: item;
+}
+
+.portfolio__item {
+    &::before {
+        content: "0" counter(item);
+        display: block;
+        font-weight: 900;
+        font-size: 144px;
+        line-height: 180px;
+        text-align: center;
+        color: #f5f2ff;
+        counter-increment: item;
+    }
+    position: relative;
+
+    &:hover {
+        .portfolio__controls {
+            opacity: 1;
+        }
+    }
+
+    .swiper-container {
+        margin-top: -105px;
+    }
+}
+
+.portfolio__slide {
+    @include list-reset;
+}
+
+.portfolio__inner {
+    font-family: "Circe";
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 35px;
+    padding: 12px 26px 11px 27px;
+    background-color: #ffffff;
+}
+
+.portfolio__time {
+    position: absolute;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    padding: 14px 21px;
+    background-color: #ffffff;
+    border-radius: 24px;
+    white-space: nowrap;
+    top: 85px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.portfolio__controls {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    width: calc(100% - 40px);
+    transform: translateY(-100%);
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+.portfolio__category {
+    position: absolute;
+    bottom: 45px;
+    left: 50%;
+    z-index: 30;
+    display: block;
+    white-space: nowrap;
+    transform: translateX(-50%);
+
+    span {
+        display: block;
+    }
+
+    &::before {
+        @include pseudo;
+        position: absolute;
+        bottom: -15px;
+        left: 0;
+        width: 100%;
+        height: 37px;
+        background: linear-gradient(
+            89.23deg,
+            #fcaf45 0.66%,
+            #f77737 20.96%,
+            #fd1d1d 41.27%,
+            #c13584 61.57%,
+            #833ab4 82.41%,
+            #405de6 103.25%
+        );
+        filter: blur(52px);
+    }
+}
+
+.portfolio__social {
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+    margin-bottom: 20px;
+
+    a {
+        width: 62px;
+        height: 62px;
+    }
+
+    svg {
+        width: 33px;
+        height: 33px;
+    }
+}
+
+.portfolio__info {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 148%;
+    text-align: center;
+
+    p {
+        padding-right: 7px;
+    }
+
+    a {
+        font-weight: 600;
+        text-decoration: underline;
+    }
+}

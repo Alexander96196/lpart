@@ -1,0 +1,8 @@
+.gradient-title {
+    font-family: "Circe";
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 99%;
+    @include textGradient;
+    margin-bottom: 39px;
+}

@@ -1,0 +1,107 @@
+.promo {
+    display: flex;
+    flex-direction: column;
+}
+
+.promo__wrapper {
+    margin-bottom: 57px;
+}
+
+.promo__text {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    @include textGradient;
+    padding: 0 73px;
+    margin-bottom: 17px;
+}
+
+.promo__title {
+    font-family: Circe;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 99%;
+    text-align: center;
+    margin-bottom: 53px;
+
+    &--holiday {
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 110.4%;
+    }
+}
+
+.promo__paragraph {
+    position: relative;
+    line-height: 21px;
+    padding-right: 49px;
+    padding-left: 68px;
+    margin-bottom: 53px;
+
+    &::after {
+        content: "";
+        position: absolute;
+        width: 34px;
+        height: 3px;
+        background: linear-gradient(
+            89.23deg,
+            #fcaf45 0.66%,
+            #f77737 20.96%,
+            #fd1d1d 41.27%,
+            #c13584 61.57%,
+            #833ab4 82.41%,
+            #405de6 103.25%
+        );
+        transform: rotate(90deg);
+        left: 35px;
+    }
+}
+
+.promo__slider {
+    @include list-reset;
+    margin-bottom: 57px;
+    padding: 0 20px;
+}
+
+.promo__img {
+    border-bottom-left-radius: 130px;
+    border-bottom-right-radius: 130px;
+}
+
+.promo__gift {
+    background: #ffffff;
+    border-radius: 28.5px;
+    padding: 11px 18px 11px 57px;
+    margin: 0 38px;
+    margin-bottom: 68px;
+}
+
+.promo__blur {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 122%;
+
+    span {
+        font-weight: 700;
+    }
+
+    &::after {
+        @include pseudo;
+        position: absolute;
+        width: 283px;
+        height: 33px;
+        left: 50px;
+        background: $g-main;
+        filter: blur(26px);
+        z-index: -1;
+    }
+
+    &::before {
+        @include pseudo;
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        left: 53px;
+        background-image: url("../../img/gift-box.svg");
+    }
+}

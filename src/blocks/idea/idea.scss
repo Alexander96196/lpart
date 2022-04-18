@@ -1,0 +1,25 @@
+.idea {
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+}
+
+.idea__title {
+    font-family: "Circe";
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 99%;
+    margin-bottom: 47px;
+}
+
+.idea__description {
+    position: relative;
+    margin-bottom: 57px;
+
+    &::after{
+        width: 51px;
+        top: 33px;
+        left: -21px;
+    }
+}
+

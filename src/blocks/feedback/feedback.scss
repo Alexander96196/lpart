@@ -1,0 +1,131 @@
+.feedback {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 0 20px;
+    margin-bottom: 94px;
+}
+
+.feedback__title {
+    font-family: "Circe";
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 99%;
+    margin-bottom: 47px;
+}
+
+.feedback__list {
+    @include list-reset;
+}
+
+.feedback__wrapper {
+    position: relative;
+    margin-top: -1px;
+    padding: 1px;
+    background: $g-main;
+    border-radius: 0 0 130px 130px;
+}
+
+.feedback__content {
+    padding: 44px 29px 0 29px;
+    background-color: #ffffff;
+    border-radius: 0 0 130px 130px;
+}
+
+.feedback__name {
+    font-family: "Circe";
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 53px;
+    margin-bottom: 11px;
+}
+
+.feedback__description {
+    position: relative;
+    margin-bottom: 37px;
+
+    &::after {
+        width: 32px;
+        left: -11px;
+        top: 18px;
+    }
+}
+
+.feedback__text {
+    font-weight: 600;
+    line-height: 21px;
+    margin-bottom: 25px;
+}
+
+.feedback__inst {
+    width: 62px;
+    height: 62px;
+}
+
+.feedback__social {
+    display: flex;
+    justify-content: center;
+
+    a {
+        width: 62px;
+        height: 62px;
+        top: 30px;
+    }
+
+    svg {
+        width: 33px;
+        height: 33px;
+    }
+}
+
+.feedback__controls {
+    display: flex;
+    justify-content: space-between;
+    max-width: 201px;
+    margin: 0 auto;
+    margin-top: 60px;
+  
+    .controls__button {
+      &--next {
+        &.swiper-button-disabled {
+          display: none;
+        }
+      }
+  
+      &--prev {
+        &.swiper-button-disabled {
+          display: none;
+  
+          & + .controls__button--next {
+            position: relative;
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+            width: 100%;
+            margin-left: auto;
+  
+            .controls__inner {
+              width: 42px;
+              max-width: 42px;
+              margin-left: auto;
+            }
+  
+            &::before {
+              right: 0;
+              left: unset;
+              transform: unset;
+            }
+  
+            &::after {
+              content: attr(data-text);
+              position: relative;
+              font-weight: 700;
+              font-size: 16px;
+              line-height: 20px;
+              white-space: nowrap;
+            }
+          }
+        }
+      }
+    }
+  }

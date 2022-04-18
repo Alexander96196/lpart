@@ -1,0 +1,30 @@
+.advantages {
+    padding: 30px 30px 40px 30px;
+}
+
+.advantages__list {
+    @include list-reset;
+}
+
+.advantages__item {
+    display: flex;
+    align-items: center;
+
+    &:not(:last-child) {
+        margin-bottom: 52px;
+    }
+}
+
+.advantages__img {
+    width: 56px;
+    height: 56px;
+    margin-right: 28px;
+}
+
+.advantages__text {
+    line-height: 21px;
+
+    span {
+        font-weight: 500;
+    }
+}

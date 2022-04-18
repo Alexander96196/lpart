@@ -1,0 +1,31 @@
+.form__button {
+    display: flex;
+    text-align: start;
+}
+
+.form__callback {
+    display: flex;
+    align-items: center;
+    padding: 0 34px;
+    margin-top: 75px;
+    margin-bottom: 63px;
+}
+
+.form__text {
+    font-size: 14px;
+    margin-right: 10px;
+}
+
+.form__social {
+    display: flex;
+
+    a {
+        width: 44px;
+        height: 44px;
+    }
+
+    svg {
+        width: 23px;
+        height: 23px;
+    }
+}

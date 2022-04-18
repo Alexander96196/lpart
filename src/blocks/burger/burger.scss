@@ -1,0 +1,70 @@
+.burger {
+    position: relative;
+    width: 27px;
+    height: 22px;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      width: 23px;
+      height: 2px;
+      border: 3px solid;
+      border: transparent;
+      background: linear-gradient(89.23deg, #FCAF45 0.66%, #F77737 20.96%, #FD1D1D 41.27%, #C13584 61.57%, #833AB4 82.41%, #405DE6 103.25%);
+      border-radius: 29px;
+      transition: all 0.3s ease 0s;
+    }
+  
+    &::before {
+      top: 0;
+    }
+  
+    &::after {
+      bottom: 0;
+    }
+  }
+
+  .burger::after {
+    width: 15px;
+    left: 4px;
+  }
+  
+  .burger.active {
+    &::before {
+      transform: rotate(45deg);
+      top: 9px;
+    }
+  
+    &::after {
+      transform: rotate(-45deg);
+      bottom: 11px;
+    }
+  
+    span {
+      transform: scale(0);
+    }
+  }
+  
+  .burger__inner {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    display: block;
+    width: 23px;
+    height: 2px;
+    background: linear-gradient(89.23deg, #FCAF45 0.66%, #F77737 20.96%, #FD1D1D 41.27%, #C13584 61.57%, #833AB4 82.41%, #405DE6 103.25%);
+    border-radius: 29px;
+    transform: translateY(-50%);
+  }
+  
+  @media (min-width: 1200px) {
+    .burger {
+      display: none;
+    }
+  }

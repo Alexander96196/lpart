@@ -1,0 +1,22 @@
+.description {
+    line-height: 21px;
+    padding: 0 14px 0 18px;
+
+    &::after {
+        content: "";
+        position: absolute;
+        width: 45px;
+        height: 3px;
+        left: 0;
+        background: linear-gradient(
+            89.23deg,
+            #fcaf45 0.66%,
+            #f77737 20.96%,
+            #fd1d1d 41.27%,
+            #c13584 61.57%,
+            #833ab4 82.41%,
+            #405de6 103.25%
+        );
+        transform: rotate(90deg);
+    }
+}

@@ -1,0 +1,57 @@
+.header {
+    display: flex;
+    flex-wrap: wrap;
+   /*  position: absolute; */
+    justify-content: space-between;
+    width: 100%;
+    padding: 23px 20px 0 31px;
+}
+
+.header__logo {
+    display: block;
+    width: 97px;
+    margin-right: 50px;
+}
+
+.header__contacts {
+    width: 100%;
+}
+
+.header__phone {
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 26px;
+    background: $g-main;
+    background-clip: text;
+    margin-top: 40px;
+
+    &::after {
+        @include pseudo;
+        @include reset;
+        top: 15px;
+        right: 11px;
+        width: 10px;
+        height: 10px;
+        padding: 0;
+        margin-left: 6px;
+        margin-top: 7px;
+        background-image: url("../../img/triangle.png");
+        background-size: contain;
+        transition: all 0.3s;
+    }
+}
+
+.header__social {
+    display: flex;
+    justify-content: center;
+    margin-top: 8px;
+    margin-bottom: 52px;
+
+    .social__item {
+        &:not(:last-child) {
+            margin-right: 8px;
+        }
+    }
+}

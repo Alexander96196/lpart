@@ -1,0 +1,44 @@
+.order {
+    padding: 0 20px;
+}
+
+.order__title {
+    font-family: "Circe";
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 99%;
+    margin-bottom: 52px;
+}
+
+.order__description {
+    margin-bottom: 51px;
+}
+
+.order__media {
+    position: relative;
+}
+
+.order__img {
+    border-radius: 0px 0px 130px 130px;
+}
+
+.order__sale {
+    font-family: "Gilroy";
+    line-height: 58px;;
+}
+
+.order__price {
+    display: flex;
+    justify-content: center;
+
+    &::before {
+        content: "";
+        position: absolute;
+        width: 136px;
+        height: 136px;
+        top: 78%;
+        left: 31%;
+        background: #ffffff;
+        border-radius: 50%;
+    }
+}

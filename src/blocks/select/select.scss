@@ -1,0 +1,20 @@
+.select {
+    position: relative;
+    padding: 1px;
+    background: $g-main;
+    border-radius: 30px;
+    margin-bottom: 30px;
+}
+
+.select__input {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 60px;
+    border: none;
+    border-radius: 30px;
+    font-size: 24px;
+    line-height: 28px;
+    padding-left: 68px;
+    background: #ffffff;
+}

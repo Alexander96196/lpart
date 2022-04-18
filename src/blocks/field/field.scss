@@ -1,0 +1,40 @@
+.field {
+    position: relative;
+    padding: 1px;
+    background: $g-main;
+    border-radius: 30px;
+    margin-bottom: 71px;
+
+    &--order {
+        margin-bottom: 47px;
+    }
+}
+
+.field__input {
+    display: block;
+    width: 100%;
+    height: 60px;
+    border: none;
+    border-radius: 30px;
+    font-size: 24px;
+    line-height: 28px;
+    padding-left: 68px;
+}
+
+.field__label {
+    display: block;
+    width: 100%;
+
+    &--phone {
+        &::before {
+            @include pseudo;
+            position: absolute;
+            width: 26px;
+            height: 26px;
+            top: 50%;
+            left: 25px;
+            background-image: url("../../img/phone.svg");
+            transform: translateY(-50%);
+        }
+    }
+}
