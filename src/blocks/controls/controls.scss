@@ -1,5 +1,5 @@
 .controls {
-    display: flex;
+    display: none
 }
 
 .controls__button {
@@ -65,3 +65,10 @@
     //background-size: 13px;
     border-radius: 50%;
 }
+
+@media (min-width: 1280px) {
+    .controls__button:not(:last-child) {
+        margin-right: 267px;
+    }
+
+    }

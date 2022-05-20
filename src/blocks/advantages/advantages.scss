@@ -28,3 +28,27 @@
         font-weight: 500;
     }
 }
+
+@media (min-width: 768px) {
+    .advantages {
+        padding: 90px 40px 40px 40px;
+    }
+    .advantages__list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .advantages__item {
+        width: 50%;
+        align-items: inherit;
+    }
+}
+
+@media (min-width: 1280px) {
+    .advantages {
+        padding-bottom: 159px;
+    }
+    .advantages__list {
+        flex-wrap: nowrap;
+    }
+}

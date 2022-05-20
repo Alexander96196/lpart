@@ -2,9 +2,13 @@ body {
   font-weight: 400;
   font-family: $first-font, sans-serif;
   font-size: 18px;
-  line-height: 22px;
+  line-height: 21px;
   color: #27262b;
   overflow-x: hidden;
+}
+
+.page {
+  @include page-wrapper;
 }
 
 img {

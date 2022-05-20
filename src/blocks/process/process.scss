@@ -58,3 +58,48 @@
     margin: 0 auto;
     margin-bottom: 36px;
 }
+
+@media (min-width: 768px) {
+    .process {
+        padding: 0 40px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .process {
+    }
+
+    .process__title {
+        font-size: 40px;
+        line-height: 59px;
+        text-align: center;
+    }
+
+    .process__list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .process__item {
+        display: flex;
+        margin-right: 155px;
+
+        &::before {
+            left: 10%;
+            top: -45px;
+            z-index: -1;
+        }
+    }
+
+    .process__content {
+        text-align: left;
+    }
+
+    .process__icon {
+        margin-right: 70px;
+    }
+
+    .process__text {
+        width: 294px;
+    }
+}

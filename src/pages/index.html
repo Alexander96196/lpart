@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Роспись одежды в Москве от 3 дней | LP art</title>
+  <title>Роспись одежды LP art</title>
   <!-- @@include('../blocks/favicon/favicon.html') -->
   <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=0">
   <link rel="preload" href="fonts/Circe-Regular.woff2" as="font" crossorigin="">
@@ -16,9 +16,8 @@
   <link rel="preload" href="fonts/Gilroy-Bold.woff2" as="font" crossorigin="">
   <link rel="preload" href="fonts/GTWalsheimPro-Regular.woff2" as="font" crossorigin="">
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
   <link rel="stylesheet" href="css/main.css">
-  <script
-    type="text/javascript">(function (window, document, n, project_ids) { window.GudokData = n; if (typeof project_ids !== "object") { project_ids = [project_ids] }; window[n] = {}; window[n]["projects"] = project_ids; config_load(project_ids.join(',')); function config_load(cId) { var a = document.getElementsByTagName("script")[0], s = document.createElement("script"), i = function () { a.parentNode.insertBefore(s, a) }, cMrs = ''; s.type = "text/javascript"; s.async = true; if (document.location.search && document.location.search.indexOf('?gudok_check=') === 0) cMrs += document.location.search.replace('?', '&'); s.src = "//mod.gudok.tel/script.js?sid=" + cId + cMrs; if (window.opera == "[object Opera]") { document.addEventListener("DOMContentLoaded", i, false) } else { i() } } })(window, document, "gd", "gbtpjz05yg");</script>
 </head>
 
 <body class="page">
@@ -27,7 +26,7 @@
       <img src="img/icon-logo-lpart.svg" alt="logo">
     </a>
     <button class="menu__button menu__button--open">Открыть меню</button>
-    <div class="menu__wrapper">
+    <div class="menu__wrapper menu__wrapper--active">
       <button class="menu__button menu__button--close">Закрыть меню</button>
       <ul class="menu__list">
         <li class="menu__item"><a href="#faq">Вопросы</a></li>
@@ -63,422 +62,275 @@
       </ul>
     </div>
   </header>
-  <section id="promo" class="promo">
-    <div class="promo__wrapper">
-      <div class="promo__content">
-        <p class="promo__text">Такого не будет ни у кого</p>
-        <h1 class="promo__title">Лучший персональный подарок<br><span class="promo__title--holiday">на новый год</span>
-        </h1>
-        <p class="promo__paragraph">Оригинальные и стильные рисунки на вещах и одежде</p>
+  <main>
+    <section id="promo" class="promo">
+      <div class="promo__wrapper">
+        <div class="promo__content">
+          <p class="promo__text">Такого не будет ни у кого</p>
+          <h1 class="promo__title">Лучший персональный подарок<br> <span class="promo__title--holiday">на новый
+              год</span>
+          </h1>
+          <p class="promo__paragraph">Оригинальные и стильные рисунки на вещах и одежде</p>
+        </div>
+        <a href="#portfolio" class="promo__button button">
+          <span class="button__inner"><span>Смотреть<br>работы</span></span>
+        </a>
       </div>
-      <a href="#portfolio" class="promo__button button">
-        <span class="button__inner"><span>Смотреть<br>работы</span></span>
+      <div class="promo__container swiper-container" data-target="slider.container">
+        <ul class="promo__slider swiper-wrapper">
+          <li class="promo__item swiper-slide">
+            <picture>
+              <source type="image/webp" srcset="../img/photo1-mobile-slider.webp">
+              <img class="promo__img slider__img" src="../img/photo1-mobile-slider.jpg" alt="">
+            </picture>
+          </li>
+          <li class="promo__item swiper-slide">
+            <picture>
+              <source type="image/webp" srcset="../img/photo2-mobile-slider.webp">
+              <img class="promo__img slider__img" src="../img/photo2-mobile-slider.jpg" alt="">
+            </picture>
+          </li>
+          <li class="promo__item swiper-slide">
+            <picture>
+              <source type="image/webp" srcset="../img/photo3-mobile-slider.webp">
+              <img class="promo__img slider__img" src="../img/photo3-mobile-slider.jpg" alt="">
+            </picture>
+          </li>
+          <li class="promo__item swiper-slide">
+            <picture>
+              <source type="image/webp" srcset="../img/photo4-mobile-slider.webp">
+              <img class="promo__img slider__img" src="../img/photo4-mobile-slider.jpg" alt="">
+            </picture>
+          </li>
+        </ul>
+        <div class="promo__pagination swiper-pagination"></div>
+      </div>
+      <a href="#" class="promo__gift">
+        <p class="promo__blur">Участвуй в конкурсе и<span> получи роспись бесплатно</span></p>
       </a>
-    </div>
-    <div class="promo__container">
-      <ul class="promo__slider swiper-slide">
-        <li class="promo__item swiper-slide">
-          <picture>
-            <source type="image/webp" srcset="../img/photo1-mobile-slider.webp">
-            <img class="promo__img" src="../img/photo1-mobile-slider.jpg" alt="">
-          </picture>
+    </section>
+    <section class="advantages">
+      <h1 class="visually-hidden">Наши преимущества</h1>
+      <ul class="advantages__list">
+        <li class="advantages__item">
+          <img class="advantages__img" src="../img/abstract-mobile.svg" alt="">
+          <p class="advantages__text">Роспись по <span>вашим</span> <br>или <span>нашим</span> эскизам</p>
         </li>
-        <li class="promo__item swiper-slide">
-          <picture>
-            <source type="image/webp" srcset="../img/photo2-mobile-slider.webp">
-            <img class="promo__img" src="../img/photo2-mobile-slider.jpg" alt="">
-          </picture>
+        <li class="advantages__item">
+          <img class="advantages__img" src="../img/paintbrush-mobile.svg" alt="">
+          <p class="advantages__text">Полностью <span><br>ручная работа</span></p>
         </li>
-        <li class="promo__item swiper-slide">
-          <picture>
-            <source type="image/webp" srcset="../img/photo3-mobile-slider.webp">
-            <img class="promo__img" src="../img/photo3-mobile-slider.jpg" alt="">
-          </picture>
+        <li class="advantages__item">
+          <img class="advantages__img" src="../img/calendar-mobile.svg" alt="">
+          <p class="advantages__text">Срок изготовления <span><br>от 7 дней</span></p>
         </li>
-        <li class="promo__item swiper-slide">
-          <picture>
-            <source type="image/webp" srcset="../img/photo4-mobile-slider.webp">
-            <img class="promo__img" src="../img/photo4-mobile-slider.jpg" alt="">
-          </picture>
+        <li class="advantages__item">
+          <img class="advantages__img" src="../img/stars-mobile.svg" alt="">
+          <p class="advantages__text">Индивидуальный подход <br>к <span>каждому клиенту</span></p>
         </li>
       </ul>
-      <div class="promo__pagination swiper-pagination"></div>
-    </div>
-    </div>
-    <a href="#" class="promo__gift">
-      <p class="promo__blur">Участвуй в конкурсе и<span> получи роспись бесплатно</span></p>
-    </a>
-  </section>
-  <section class="advantages">
-    <h1 class="visually-hidden">Наши преимущества</h1>
-    <ul class="advantages__list">
-      <li class="advantages__item">
-        <img class="advantages__img" src="../img/abstract-mobile.svg" alt="">
-        <p class="advantages__text">Роспись по <span>вашим</span> <br>или <span>нашим</span> эскизам</p>
-      </li>
-      <li class="advantages__item">
-        <img class="advantages__img" src="../img/paintbrush-mobile.svg" alt="">
-        <p class="advantages__text">Полностью <span><br>ручная работа</span></p>
-      </li>
-      <li class="advantages__item">
-        <img class="advantages__img" src="../img/calendar-mobile.svg" alt="">
-        <p class="advantages__text">Срок изготовления <span><br>от 7 дней</span></p>
-      </li>
-      <li class="advantages__item">
-        <img class="advantages__img" src="../img/stars-mobile.svg" alt="">
-        <p class="advantages__text">Индивидуальный подход <br>к <span>каждому клиенту</span></p>
-      </li>
-    </ul>
-  </section>
-  <section id="portfolio" class="portfolio">
-    <div class="portfolio__wrapper">
-      <div class="portfolio__block">
-        <h2 class="portfolio__title title">Ищешь оригинальный подарок?</h2>
-        <h3 class="portfolio__gradient-title gradient-title">Распишем любую вещь</h3>
-      </div>
-      <div class="portfolio__description description">При предоставлении своего эскиза заказ выполняется быстрее</div>
-    </div>
-    <ul class="portfolio__list">
-      <li class="portfolio__item" data-controller="portfolio">
-        <div class="portfolio__category">
-          <span class="portfolio__inner">Кроссовки</span>
+    </section>
+    <section id="portfolio" class="portfolio">
+      <div class="portfolio__wrapper">
+        <div class="portfolio__block">
+          <h2 class="portfolio__title title">Ищешь оригинальный подарок?</h2>
+          <h3 class="portfolio__gradient-title gradient-title">Распишем любую вещь</h3>
         </div>
-        <div class="swiper-container" data-target="portfolio.container">
-          <ul class="portfolio__slider swiper-wrapper">
-            <li class="portfolio__slide swiper-slide">
-              <span class="portfolio__time">Срок изготовления: 11 дней</span>
-              <picture>
-                <source type="image/webp" srcset="../img/photo2-mobile.webp">
-                <img src="../img/photo2-mobile.jpg" alt="slide" class="portfolio__img">
-              </picture>
-            </li>
+        <div class="portfolio__description description">При предоставлении своего эскиза заказ выполняется быстрее</div>
+      </div>
+      <ul class="portfolio__list">
+        <li class="portfolio__item">
+          <div class="portfolio__category">
+            <span class="portfolio__inner">Кроссовки</span>
+          </div>
+          <div class="portfolio__container swiper-container">
             <ul class="portfolio__slider swiper-wrapper">
               <li class="portfolio__slide swiper-slide">
                 <span class="portfolio__time">Срок изготовления: 11 дней</span>
                 <picture>
                   <source type="image/webp" srcset="../img/photo2-mobile.webp">
-                  <img src="../img/photo2-mobile.jpg" alt="slide" class="portfolio__img">
+                  <img src="../img/photo2-mobile.jpg" alt="slide" class="portfolio__img  slider__img">
                 </picture>
               </li>
-              <ul class="portfolio__slider swiper-wrapper">
-                <li class="portfolio__slide swiper-slide">
-                  <span class="portfolio__time">Срок изготовления: 11 дней</span>
-                  <picture>
-                    <source type="image/webp" srcset="../img/photo2-mobile.webp">
-                    <img src="../img/photo2-mobile.jpg" alt="slide" class="portfolio__img">
-                  </picture>
-                </li>
-              </ul>
-              <div class="portfolio__pagination swiper-pagination"></div>
-              <div class="portfolio__controls controls">
-                <button class="controls__button controls__button--prev" data-target="portfolio.prev">
-                  <span class="controls__inner" aria-label="Назад"></span>
-                </button>
-                <button class="controls__button controls__button--next" data-target="portfolio.next">
-                  <span class="controls__inner" aria-label="Вперед"></span>
-                </button>
-              </div>
-        </div>
-      </li>
-      <li class="portfolio__item" data-controller="portfolio">
-        <div class="portfolio__category">
-          <span class="portfolio__inner">Худи</span>
-        </div>
-        <div class="swiper-container" data-target="portfolio.container">
-          <ul class="portfolio__slider swiper-wrapper">
-            <li class="portfolio__slide swiper-slide">
-              <span class="portfolio__time">Срок изготовления: 11 дней</span>
-              <picture>
-                <source type="image/webp" srcset="../img/photo3-mobile.webp">
-                <img src="../img/photo3-mobile.jpg" alt="slide" class="portfolio__img">
-              </picture>
-            </li>
+              <li class="portfolio__slide swiper-slide">
+                <span class="portfolio__time">Срок изготовления: 11 дней</span>
+                <picture>
+                  <source type="image/webp" srcset="../img/photo2-mobile.webp">
+                  <img src="../img/photo2-mobile.jpg" alt="slide" class="portfolio__img  slider__img">
+                </picture>
+              </li>
+              <li class="portfolio__slide swiper-slide">
+                <span class="portfolio__time">Срок изготовления: 11 дней</span>
+                <picture>
+                  <source type="image/webp" srcset="../img/photo2-mobile.webp">
+                  <img src="../img/photo2-mobile.jpg" alt="slide" class="portfolio__img  slider__img">
+                </picture>
+              </li>
+            </ul>
+            <div class="portfolio__pagination swiper-pagination"></div>
+            <div class="portfolio__controls controls">
+              <button class="controls__button controls__button--prev" data-target="portfolio.prev">
+                <span class="controls__inner" aria-label="Назад"></span>
+              </button>
+              <button class="controls__button controls__button--next" data-target="portfolio.next">
+                <span class="controls__inner" aria-label="Вперед"></span>
+              </button>
+            </div>
+          </div>
+        </li>
+        <li class="portfolio__item">
+          <div class="portfolio__category">
+            <span class="portfolio__inner">Худи</span>
+          </div>
+          <div class="portfolio__container swiper-container">
             <ul class="portfolio__slider swiper-wrapper">
               <li class="portfolio__slide swiper-slide">
                 <span class="portfolio__time">Срок изготовления: 11 дней</span>
                 <picture>
                   <source type="image/webp" srcset="../img/photo3-mobile.webp">
-                  <img src="../img/photo3-mobile.jpg" alt="slide" class="portfolio__img">
+                  <img src="../img/photo3-mobile.jpg" alt="slide" class="portfolio__img  slider__img">
                 </picture>
               </li>
-              <ul class="portfolio__slider swiper-wrapper">
-                <li class="portfolio__slide swiper-slide">
-                  <span class="portfolio__time">Срок изготовления: 11 дней</span>
-                  <picture>
-                    <source type="image/webp" srcset="../img/photo3-mobile.webp">
-                    <img src="../img/photo3-mobile.jpg" alt="slide" class="portfolio__img">
-                  </picture>
-                </li>
-              </ul>
-              <div class="portfolio__pagination swiper-pagination"></div>
-              <div class="portfolio__controls controls">
-                <button class="controls__button controls__button--prev" data-target="portfolio.prev">
-                  <span class="controls__inner" aria-label="Назад"></span>
-                </button>
-                <button class="controls__button controls__button--next" data-target="portfolio.next">
-                  <span class="controls__inner" aria-label="Вперед"></span>
-                </button>
-              </div>
-        </div>
-      </li>
-      <li class="portfolio__item" data-controller="portfolio">
-        <div class="portfolio__category">
-          <span class="portfolio__inner">Куртки</span>
-        </div>
-        <div class="swiper-container" data-target="portfolio.container">
-          <ul class="portfolio__slider swiper-wrapper">
-            <li class="portfolio__slide swiper-slide">
-              <span class="portfolio__time">Срок изготовления: 11 дней</span>
-              <picture>
-                <source type="image/webp" srcset="../img/photo4-mobile.webp">
-                <img src="../img/photo4-mobile.jpg" alt="slide" class="portfolio__img">
-              </picture>
-            </li>
+              <li class="portfolio__slide swiper-slide">
+                <span class="portfolio__time">Срок изготовления: 11 дней</span>
+                <picture>
+                  <source type="image/webp" srcset="../img/photo3-mobile.webp">
+                  <img src="../img/photo3-mobile.jpg" alt="slide" class="portfolio__img  slider__img">
+                </picture>
+              </li>
+              <li class="portfolio__slide swiper-slide">
+                <span class="portfolio__time">Срок изготовления: 11 дней</span>
+                <picture>
+                  <source type="image/webp" srcset="../img/photo3-mobile.webp">
+                  <img src="../img/photo3-mobile.jpg" alt="slide" class="portfolio__img  slider__img">
+                </picture>
+              </li>
+            </ul>
+            <div class="portfolio__pagination swiper-pagination"></div>
+
+          </div>
+        </li>
+        <li class="portfolio__item">
+          <div class="portfolio__category">
+            <span class="portfolio__inner">Куртки</span>
+          </div>
+          <div class="promo__container swiper-container">
             <ul class="portfolio__slider swiper-wrapper">
               <li class="portfolio__slide swiper-slide">
                 <span class="portfolio__time">Срок изготовления: 11 дней</span>
                 <picture>
                   <source type="image/webp" srcset="../img/photo4-mobile.webp">
-                  <img src="../img/photo4-mobile.jpg" alt="slide" class="portfolio__img">
+                  <img src="../img/photo4-mobile.jpg" alt="slide" class="portfolio__img  slider__img">
                 </picture>
               </li>
-              <ul class="portfolio__slider swiper-wrapper">
-                <li class="portfolio__slide swiper-slide">
-                  <span class="portfolio__time">Срок изготовления: 11 дней</span>
-                  <picture>
-                    <source type="image/webp" srcset="../img/photo4-mobile.webp">
-                    <img src="../img/photo4-mobile.jpg" alt="slide" class="portfolio__img">
-                  </picture>
-                </li>
-              </ul>
-              <div class="portfolio__pagination swiper-pagination"></div>
-              <div class="portfolio__controls controls">
-                <button class="controls__button controls__button--prev" data-target="portfolio.prev">
-                  <span class="controls__inner" aria-label="Назад"></span>
-                </button>
-                <button class="controls__button controls__button--next" data-target="portfolio.next">
-                  <span class="controls__inner" aria-label="Вперед"></span>
-                </button>
-              </div>
-        </div>
-      </li>
-      <li class="portfolio__item" data-controller="portfolio">
-        <div class="portfolio__category">
-          <span class="portfolio__inner">Рюкзаки</span>
-        </div>
-        <div class="swiper-container" data-target="portfolio.container">
-          <ul class="portfolio__slider swiper-wrapper">
-            <li class="portfolio__slide swiper-slide">
-              <span class="portfolio__time">Срок изготовления: 11 дней</span>
-              <picture>
-                <source type="image/webp" srcset="../img/photo5-mobile.webp">
-                <img src="../img/photo5-mobile.jpg" alt="slide" class="portfolio__img">
-              </picture>
-            </li>
+              <li class="portfolio__slide swiper-slide">
+                <span class="portfolio__time">Срок изготовления: 11 дней</span>
+                <picture>
+                  <source type="image/webp" srcset="../img/photo4-mobile.webp">
+                  <img src="../img/photo4-mobile.jpg" alt="slide" class="portfolio__img  slider__img">
+                </picture>
+              </li>
+              <li class="portfolio__slide swiper-slide">
+                <span class="portfolio__time">Срок изготовления: 11 дней</span>
+                <picture>
+                  <source type="image/webp" srcset="../img/photo4-mobile.webp">
+                  <img src="../img/photo4-mobile.jpg" alt="slide" class="portfolio__img  slider__img">
+                </picture>
+              </li>
+            </ul>
+            <div class="portfolio__pagination swiper-pagination"></div>
+            <div class="portfolio__controls controls">
+              <button class="controls__button controls__button--prev" data-target="portfolio.prev">
+                <span class="controls__inner" aria-label="Назад"></span>
+              </button>
+              <button class="controls__button controls__button--next" data-target="portfolio.next">
+                <span class="controls__inner" aria-label="Вперед"></span>
+              </button>
+            </div>
+          </div>
+        </li>
+        <li class="portfolio__item">
+          <div class="portfolio__category">
+            <span class="portfolio__inner">Рюкзаки</span>
+          </div>
+          <div class="portfolio__container swiper-container">
             <ul class="portfolio__slider swiper-wrapper">
               <li class="portfolio__slide swiper-slide">
                 <span class="portfolio__time">Срок изготовления: 11 дней</span>
                 <picture>
                   <source type="image/webp" srcset="../img/photo5-mobile.webp">
-                  <img src="../img/photo5-mobile.jpg" alt="slide" class="portfolio__img">
+                  <img src="../img/photo5-mobile.jpg" alt="slide" class="portfolio__img  slider__img">
                 </picture>
               </li>
-              <ul class="portfolio__slider swiper-wrapper">
-                <li class="portfolio__slide swiper-slide">
-                  <span class="portfolio__time">Срок изготовления: 11 дней</span>
-                  <picture>
-                    <source type="image/webp" srcset="../img/photo5-mobile.webp">
-                    <img src="../img/photo5-mobile.jpg" alt="slide" class="portfolio__img">
-                  </picture>
-                </li>
-              </ul>
-              <div class="portfolio__pagination swiper-pagination"></div>
-              <div class="portfolio__controls controls">
-                <button class="controls__button controls__button--prev" data-target="portfolio.prev">
-                  <span class="controls__inner" aria-label="Назад"></span>
-                </button>
-                <button class="controls__button controls__button--next" data-target="portfolio.next">
-                  <span class="controls__inner" aria-label="Вперед"></span>
-                </button>
-              </div>
-        </div>
-      </li>
-      <li class="portfolio__item" data-controller="portfolio">
-        <div class="portfolio__category">
-          <span class="portfolio__inner">И многое другое</span>
-        </div>
-        <div class="swiper-container" data-target="portfolio.container">
-          <ul class="portfolio__slider swiper-wrapper">
-            <li class="portfolio__slide swiper-slide">
-              <span class="portfolio__time">Срок изготовления: 11 дней</span>
-              <picture>
-                <source type="image/webp" srcset="../img/photo6-mobile.webp">
-                <img src="../img/photo6-mobile.jpg" alt="slide" class="portfolio__img">
-              </picture>
-            </li>
+              <li class="portfolio__slide swiper-slide">
+                <span class="portfolio__time">Срок изготовления: 11 дней</span>
+                <picture>
+                  <source type="image/webp" srcset="../img/photo5-mobile.webp">
+                  <img src="../img/photo5-mobile.jpg" alt="slide" class="portfolio__img  slider__img">
+                </picture>
+              </li>
+              <li class="portfolio__slide swiper-slide">
+                <span class="portfolio__time">Срок изготовления: 11 дней</span>
+                <picture>
+                  <source type="image/webp" srcset="../img/photo5-mobile.webp">
+                  <img src="../img/photo5-mobile.jpg" alt="slide" class="portfolio__img  slider__img">
+                </picture>
+              </li>
+            </ul>
+            <div class="portfolio__pagination swiper-pagination"></div>
+            <div class="portfolio__controls controls">
+              <button class="controls__button controls__button--prev" data-target="portfolio.prev">
+                <span class="controls__inner" aria-label="Назад"></span>
+              </button>
+              <button class="controls__button controls__button--next" data-target="portfolio.next">
+                <span class="controls__inner" aria-label="Вперед"></span>
+              </button>
+            </div>
+          </div>
+        </li>
+        <li class="portfolio__item">
+          <div class="portfolio__category">
+            <span class="portfolio__inner">И многое другое</span>
+          </div>
+          <div class="portfolio__container swiper-container">
             <ul class="portfolio__slider swiper-wrapper">
               <li class="portfolio__slide swiper-slide">
                 <span class="portfolio__time">Срок изготовления: 11 дней</span>
                 <picture>
                   <source type="image/webp" srcset="../img/photo6-mobile.webp">
-                  <img src="../img/photo6-mobile.jpg" alt="slide" class="portfolio__img">
+                  <img src="../img/photo6-mobile.jpg" alt="slide" class="portfolio__img  slider__img">
                 </picture>
               </li>
-              <ul class="portfolio__slider swiper-wrapper">
-                <li class="portfolio__slide swiper-slide">
-                  <span class="portfolio__time">Срок изготовления: 11 дней</span>
-                  <picture>
-                    <source type="image/webp" srcset="../img/photo6-mobile.webp">
-                    <img src="../img/photo6-mobile.jpg" alt="slide" class="portfolio__img">
-                  </picture>
-                </li>
-              </ul>
-              <div class="portfolio__pagination swiper-pagination"></div>
-              <div class="portfolio__controls controls">
-                <button class="controls__button controls__button--prev" data-target="portfolio.prev">
-                  <span class="controls__inner" aria-label="Назад"></span>
-                </button>
-                <button class="controls__button controls__button--next" data-target="portfolio.next">
-                  <span class="controls__inner" aria-label="Вперед"></span>
-                </button>
-              </div>
-        </div>
-      </li>
-    </ul>
-    <div class="portfolio__info">
-      <ul class="portfolio__social social">
-        <li class="social__item social__item--instagram social__item--inst">
-          <a href="#">
-            <svg>
-              <use xlink:href="img/sprites/sprite.svg#icon-inst"></use>
-            </svg>
-          </a>
-        </li>
-      </ul>
-      <p>Как сочетать яркую кастомную вещь с повседневной одеждой можно узнать в нашем<a href="#">аккаунте Instagram</a></p>
-    </div>
-  </section>
-  <section class="feedback" id="feedback" data-controller="feedback">
-          <h2 class="feedback__title">Радостные обладатели индивидуальной росписи :)</h2>
-          <div class="swiper-container" data-target="feedback.container">
-            <ul class="feedback__list swiper-wrapper">
-              <li class="feedback__item swiper-slide">
-                <div class="feedback__img">
-                  <picture>
-                    <img src="../img/feedback-mobile.jpg" alt="Отзыв">
-                  </picture>
-                </div>
-                <div class="feedback__wrapper">
-                  <div class="feedback__content">
-                    <div class="feedback__name">Ирина Иванова</div>
-                    <div class="feedback__description description">
-                      <div class="description__content">
-                        <p class="description__text"><b>Тип вещи:</b> Футболка</p>
-                        <p class="description__text"><b>Срок изготовления:</b> 8 дней</p>
-                      </div>
-                    </div>
-                    <p class="feedback__text">Спасибо за такой крутой принт на моей новой джинсовке! Теперь все друзья
-                      хотят
-                      себе кастом вещей!</p>
-                    <ul class="feedback__social social">
-                      <li class="feedback__item social__item social__item--instagram social__item--inst">
-                        <a href="#">
-                          <svg>
-                            <use xlink:href="img/sprites/sprite.svg#icon-inst"></use>
-                          </svg>
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
+              <li class="portfolio__slide swiper-slide">
+                <span class="portfolio__time">Срок изготовления: 11 дней</span>
+                <picture>
+                  <source type="image/webp" srcset="../img/photo6-mobile.webp">
+                  <img src="../img/photo6-mobile.jpg" alt="slide" class="portfolio__img  slider__img">
+                </picture>
               </li>
-              <li class="feedback__item swiper-slide">
-                <div class="feedback__img">
-                  <picture>
-                    <img src="../img/feedback-mobile.jpg" alt="Отзыв">
-                  </picture>
-                </div>
-                <div class="feedback__wrapper">
-                  <div class="feedback__content">
-                    <div class="feedback__name">Ирина Иванова</div>
-                    <div class="feedback__description description">
-                      <div class="description__content">
-                        <p class="description__text"><b>Тип вещи:</b> Футболка</p>
-                        <p class="description__text"><b>Срок изготовления:</b> 8 дней</p>
-                      </div>
-                    </div>
-                    <p class="feedback__text">Спасибо за такой крутой принт на моей новой джинсовке! Теперь все друзья
-                      хотят
-                      себе кастом вещей!</p>
-                    <ul class="feedback__social social">
-                      <li class="feedback__item social__item social__item--instagram social__item--inst">
-                        <a href="#">
-                          <svg>
-                            <use xlink:href="img/sprites/sprite.svg#icon-inst"></use>>
-                          </svg>
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
+              <li class="portfolio__slide swiper-slide">
+                <span class="portfolio__time">Срок изготовления: 11 дней</span>
+                <picture>
+                  <source type="image/webp" srcset="../img/photo6-mobile.webp">
+                  <img src="../img/photo6-mobile.jpg" alt="slide" class="portfolio__img  slider__img">
+                </picture>
               </li>
             </ul>
-            <div class="feedback__controls controls">
-              <button class="controls__button controls__button--prev" data-target="feedback.prev">
+            <div class="portfolio__pagination swiper-pagination"></div>
+            <div class="portfolio__controls controls">
+              <button class="controls__button controls__button--prev" data-target="portfolio.prev">
                 <span class="controls__inner" aria-label="Назад"></span>
               </button>
-              <button class="controls__button controls__button--next" data-text="Следующий отзыв"
-                data-target="feedback.next">
+              <button class="controls__button controls__button--next" data-target="portfolio.next">
                 <span class="controls__inner" aria-label="Вперед"></span>
               </button>
             </div>
           </div>
-  </section>
-  <section class="idea" id="idea">
-    <div class="idea__content">
-      <h2 class="idea__title">Придумали идею росписи своей вещи, но не знаете, как воплотить её
-        <br>в реальность?
-      </h2>
-      <p class="idea__description description">Оставьте свой номер телефона,
-        и мы перезвоним вам <b>в ближайшее время</b> для обсуждения деталей</p>
-    </div>
-    <form class="order__form form">
-      <input type="hidden" name="project_name" value="LP Art">
-      <div class="form__field select">
-        <label for="t1" class="select__label"><span class="visually-hidden">Тип вещи</span></label>
-        <select name="Тип" id="t1" class="select__input">
-          <option selected value="Тип вещи">Тип вещи</option>
-          <option value="Джинса">Джинса</option>
-          <option value="Хлопок">Хлопок</option>
-          <option value="Кожа">Кожа</option>
-          <option value="Коже заменитель">Коже заменитель</option>
-          <option value="Лен">Лен</option>
-          <option value="Шелк">Шелк</option>
-          <option value="Шерсть">Шерсть</option>
-          <option value="Вельвет">Вельвет</option>
-          <option value="Другой">Другой</option>
-          <option value="Не знаю">Не знаю</option>
-        </select>
-      </div>
-      <div class="form__field field">
-        <label for="phone" class="field__label field__label--phone"><span class="visually-hidden">Телефон</span></label>
-        <input required type="tel" placeholder="Номер телефона" name="Телефон" id="phone"
-          class=" field__input field__input--phone">
-      </div>
-      <button class="form__button button">
-        <span class="button__inner"><span>Обсудить<br> идею</span></span>
-      </button>
-      <div class="form__callback">
-        <p class="form__text">Или свяжитесь с нами:</p>
-        <ul class="form__social social">
-          <li class="social__item social__item--whatsapp social__item--ws-form">
-            <a href="#">
-              <svg>
-                <use xlink:href="img/sprites/sprite.svg#icon-ws"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social__item social__item--instagram social__item--inst-form">
+        </li>
+      </ul>
+      <div class="portfolio__info">
+        <ul class="portfolio__social social">
+          <li class="social__item social__item--instagram social__item--inst">
             <a href="#">
               <svg>
                 <use xlink:href="img/sprites/sprite.svg#icon-inst"></use>
@@ -486,199 +338,500 @@
             </a>
           </li>
         </ul>
+        <p>Как сочетать яркую кастомную вещь с повседневной одеждой можно узнать в нашем <a href="#">аккаунте
+            Instagram</a>
+        </p>
       </div>
-    </form>
-    </div>
-    <picture>
-      <img src="../img/iphone-mobile.jpg">
-    </picture>
-  </section>
-  <section class="process" id="process">
-    <h2 class="process__title">Как проходит процесс росписи</h2>
-    <ul class="process_list">
-      <li class="process__item">
-        <img src="../img/curriculum.svg" alt="Обрабатываем заявку" class="process__icon">
-        <div class="process__content">
-          <p class="process__name">Обрабатываем заявку</p>
-          <p class="process__text">Мы получаем вашу заявку на кастом, связываемся с вами по телефону или через
-            мессенджеры, обсуждаем детали заказа</p>
-        </div>
-      </li>
-      <li class="process__item">
-        <img src="../img/drawing.svg" alt="Создаём эскиз" class="process__icon">
-        <div class="process__content">
-          <p class="process__name">Создаём эскиз</p>
-          <p class="process__text">По вашим задумкам или нашим идеям создаём и корректируем эскиз для будущей росписи
-          </p>
-        </div>
-      </li>
-      <li class="process__item">
-        <img src="../img/t-shirt-process.svg" alt="Переносим эскиз на вещь" class="process__icon">
-        <div class="process__content">
-          <p class="process__name">Переносим эскиз на вещь</p>
-          <p class="process__text">Расписываем присланную вами или купленную нами за дополнительную плату вещь</p>
-        </div>
-      </li>
-      <li class="process__item">
-        <img src="../img/package.svg" alt="Отправляем посылку " class="process__icon">
-        <div class="process__content">
-          <p class="process__name">Отправляем посылку </p>
-          <p class="process__text">Упаковываем заказ и отправляем в любую точку мира Почтой России</p>
-          <div class="process__tooltip tooltip">
-            <div class="tooltip__bullet">
-              <p class="tooltip__inner">!</p>
+    </section>
+    <section class="feedback" id="feedback" data-controller="feedback">
+      <h2 class="feedback__title">Радостные обладатели индивидуальной росписи :)</h2>
+      <div class="feedback__container swiper-container" data-target="feedback.container">
+        <ul class="feedback__list swiper-wrapper">
+          <li class="feedback__item swiper-slide">
+            <div class="feedback__img">
+              <picture>
+                <img src="../img/feedback-mobile.jpg" alt="Отзыв">
+              </picture>
             </div>
-            <div class="tooltip__content">
-              <p class="tooltip__text">Возможен самовывоз в Москве. Доставка по всему миру</p>
+            <div class="feedback__wrapper">
+              <div class="feedback__content">
+                <div class="feedback__name">Ирина Иванова</div>
+                <div class="feedback__description description">
+                  <div class="description__content">
+                    <p class="description__text"><b>Тип вещи:</b> Футболка</p>
+                    <p class="description__text"><b>Срок изготовления:</b> 8 дней</p>
+                  </div>
+                </div>
+                <p class="feedback__text">Спасибо за такой крутой принт на моей новой джинсовке! Теперь все друзья
+                  хотят
+                  себе кастом вещей!</p>
+                <ul class="feedback__social social">
+                  <li class="social__item social__item--instagram social__item--inst social__item--feedback">
+                    <a href="#">
+                      <svg>
+                        <use xlink:href="img/sprites/sprite.svg#icon-inst"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="feedback__item swiper-slide">
+            <div class="feedback__img">
+              <picture>
+                <img src="../img/feedback-mobile.jpg" alt="Отзыв">
+              </picture>
+            </div>
+            <div class="feedback__wrapper">
+              <div class="feedback__content">
+                <div class="feedback__name">Ирина Иванова</div>
+                <div class="feedback__description description">
+                  <div class="description__content">
+                    <p class="description__text"><b>Тип вещи:</b> Футболка</p>
+                    <p class="description__text"><b>Срок изготовления:</b> 8 дней</p>
+                  </div>
+                </div>
+                <p class="feedback__text">Спасибо за такой крутой принт на моей новой джинсовке! Теперь все друзья
+                  хотят
+                  себе кастом вещей!</p>
+                <ul class="feedback__social social">
+                  <li class="feedback__item social__item social__item--instagram social__item--inst">
+                    <a href="#">
+                      <svg>
+                        <use xlink:href="img/sprites/sprite.svg#icon-inst"></use>>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <div class="feedback__controls swiper-pagination controls">
+          <button class="controls__button controls__button--prev swiper__button--prev" data-target="feedback.prev">
+            <span class="controls__inner" aria-label="Назад"></span>
+          </button>
+          <button class="controls__button controls__button--next swiper__button--next" data-text="Следующий отзыв"
+            data-target="feedback.next">
+            <span class="controls__inner" aria-label="Вперед"></span>
+          </button>
+        </div>
+      </div>
+    </section>
+    <section class="idea" id="idea">
+      <div class="idea__content">
+        <h2 class="idea__title">Придумали идею росписи своей вещи, но не знаете, как воплотить её
+          <br>в реальность?
+        </h2>
+        <p class="idea__description description">Оставьте свой номер телефона,
+          и мы перезвоним вам <b>в ближайшее время</b> для обсуждения деталей</p>
+        <form class="order__form form">
+          <input type="hidden" name="project_name" value="LP Art">
+          <div class="form__field select">
+            <label for="t1" class="select__label"><span class="visually-hidden">Тип вещи</span></label>
+            <select name="Тип" id="t1" class="select__input">
+              <option selected value="Тип вещи">Тип вещи</option>
+              <option value="Джинса">Джинса</option>
+              <option value="Хлопок">Хлопок</option>
+              <option value="Кожа">Кожа</option>
+              <option value="Коже заменитель">Коже заменитель</option>
+              <option value="Лен">Лен</option>
+              <option value="Шелк">Шелк</option>
+              <option value="Шерсть">Шерсть</option>
+              <option value="Вельвет">Вельвет</option>
+              <option value="Другой">Другой</option>
+              <option value="Не знаю">Не знаю</option>
+            </select>
+          </div>
+          <div class="form__field field">
+            <label for="phone" class="field__label field__label--phone"><span
+                class="visually-hidden">Телефон</span></label>
+            <input required type="tel" placeholder="Номер телефона" name="Телефон" id="phone"
+              class=" field__input field__input--phone">
+          </div>
+          <button class="form__button button">
+            <span class="button__inner"><span>Обсудить<br> идею</span></span>
+          </button>
+          <div class="form__callback">
+            <p class="form__text">Или свяжитесь с нами:</p>
+            <ul class="form__social social">
+              <li class="social__item social__item--whatsapp social__item--ws-form">
+                <a href="#">
+                  <svg>
+                    <use xlink:href="img/sprites/sprite.svg#icon-ws"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item social__item--instagram social__item--inst-form">
+                <a href="#">
+                  <svg>
+                    <use xlink:href="img/sprites/sprite.svg#icon-inst"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </form>
+      </div>
+      <picture>
+        <img src="../img/iphone-mobile.jpg">
+      </picture>
+    </section>
+    <section class="process" id="process">
+      <h2 class="process__title">Как проходит процесс росписи</h2>
+      <ul class="process__list">
+        <li class="process__item">
+          <img src="../img/curriculum.svg" alt="Обрабатываем заявку" class="process__icon">
+          <div class="process__content">
+            <p class="process__name">Обрабатываем заявку</p>
+            <p class="process__text">Мы получаем вашу заявку на кастом, связываемся с вами по телефону или через
+              мессенджеры, обсуждаем детали заказа</p>
+          </div>
+        </li>
+        <li class="process__item">
+          <img src="../img/drawing.svg" alt="Создаём эскиз" class="process__icon">
+          <div class="process__content">
+            <p class="process__name">Создаём эскиз</p>
+            <p class="process__text">По вашим задумкам или нашим идеям создаём и корректируем эскиз для будущей росписи
+            </p>
+          </div>
+        </li>
+        <li class="process__item">
+          <img src="../img/t-shirt-process.svg" alt="Переносим эскиз на вещь" class="process__icon">
+          <div class="process__content">
+            <p class="process__name">Переносим эскиз на вещь</p>
+            <p class="process__text">Расписываем присланную вами или купленную нами за дополнительную плату вещь</p>
+          </div>
+        </li>
+        <li class="process__item">
+          <img src="../img/package.svg" alt="Отправляем посылку " class="process__icon">
+          <div class="process__content">
+            <p class="process__name">Отправляем посылку </p>
+            <p class="process__text">Упаковываем заказ и отправляем в любую точку мира Почтой России</p>
+            <div class="process__tooltip tooltip">
+              <div class="tooltip__bullet">
+                <p class="tooltip__inner">!</p>
+              </div>
+              <div class="tooltip__content">
+                <p class="tooltip__text">Возможен самовывоз в Москве. Доставка по всему миру</p>
+              </div>
             </div>
           </div>
-        </div>
-      </li>
-    </ul>
-  </section>
-  <section class="video">
-    <div class="video__content">
-      <h2 class="video__title gradient-title">Посмотрите процесс росписи на наших видео</h2>
-      <p class="video__text">Наши художники <br>используют только <b>качественные материалы</b> для создания эскизов
-        <br>на ткани
-      </p>
-    </div>
-    <div class="swiper-container" data-target="video.container">
-      <ul class="video__list swiper-wrapper">
-        <li class="video__item swiper-slide">
-          <video data-target="video.target" poster="../img/poster-01.jpg" src="../img/r-01.mp4"></video>
-          <button class="video__play play play--first" data-target="video.play">
-            <span class="play__inner"></span>
-          </button>
         </li>
       </ul>
-    </div>
-    <div class="video__controls controls">
-      <button class="controls__button controls__button--prev" data-target="video.prev">
-        <span class="controls__inner" aria-label="Назад"></span>
-      </button>
-      <button class="controls__button controls__button--next" data-target="video.next">
-        <span class="controls__inner" aria-label="Вперед"></span>
-      </button>
-    </div>
-    </div>
-    <h2 class="video__title gradient-title">Как мы упаковываем посылки</h2>
-    <p class="video__text">Каждая посылка упаковывается
-      <br><b>с любовью и вниманием.</b> Возможно добавление других предметов и украшений к подарку
-    </p>
-    <div class="swiper-container" data-target="video.container">
-      <ul class="video__list swiper-wrapper">
-        <li class="video__item swiper-slide">
-          <video data-target="video.target" poster="../img/poster-01.jpg" src="../img/r-01.mp4"></video>
-          <button class="video__play play play--first" data-target="video.play">
-            <span class="play__inner"></span>
+    </section>
+    <section class="video">
+      <div class="video__top" data-controller="video">
+        <div class="video__content video__content--left">
+          <h2 class="video__title gradient-title">Посмотрите процесс росписи на наших видео</h2>
+          <p class="video__text">Наши художники <br>используют только <b>качественные материалы</b> для создания эскизов
+            <br>на ткани
+          </p>
+        </div>
+        <div class="swiper-container" data-target="video.container">
+          <ul class="video__list swiper-wrapper">
+            <li class="video__item swiper-slide">
+              <video data-target="video.target" poster="" src=""></video>
+              <button class="video__play play play--first" data-target="video.play">
+                <span class="play__inner"></span>
+              </button>
+            </li>
+          </ul>
+        </div>
+        <div class="video__controls video__controls--left controls">
+          <button class="controls__button controls__button--prev" data-target="video.prev">
+            <span class="controls__inner" aria-label="Назад"></span>
           </button>
+          <button class="controls__button controls__button--next" data-target="video.next">
+            <span class="controls__inner" aria-label="Вперед"></span>
+          </button>
+        </div>
+      </div>
+      <div class="video__bottom" data-controller="video">
+        <div class="video__content video__content--right">
+          <h2 class="video__title gradient-title">Как мы упаковываем посылки</h2>
+          <p class="video__text">Каждая посылка упаковывается
+            <br><b>с любовью и вниманием.</b> Возможно добавление других предметов и украшений к подарку
+          </p>
+        </div>
+        <div class="swiper-container" data-target="video.container">
+          <ul class="video__list swiper-wrapper">
+            <li class="video__item swiper-slide">
+              <video data-target="video.target" poster="" src=""></video>
+              <button class="video__play play play--first" data-target="video.play">
+                <span class="play__inner"></span>
+              </button>
+            </li>
+          </ul>
+        </div>
+        <div class="video__controls video__controls--right controls">
+          <button class="controls__button controls__button--prev" data-target="video.prev">
+            <span class="controls__inner" aria-label="Назад"></span>
+          </button>
+          <button class="controls__button controls__button--next" data-target="video.next">
+            <span class="controls__inner" aria-label="Вперед"></span>
+          </button>
+        </div>
+      </div>
+    </section>
+    <section class="faq" id="faq">
+      <h2 class="faq__title">Ответы на самые частые вопросы</h2>
+      <ul class="faq__list">
+        <li class="faq__item">
+          <div class="faq__content">
+            <p class="faq__question">Как ухаживать за вещью с рисунком</p>
+            <p class="faq__answer">Мы получаем вашу заявку на кастом, связываемся с вами по телефону или через
+              мессенджеры, обсуждаем детали заказа</p>
+          </div>
+        </li>
+        <li class="faq__item">
+          <div class="faq__content">
+            <p class="faq__question">От чего зависит срок выполнения заказа</p>
+            <p class="faq__answer">Мы получаем вашу заявку на кастом, связываемся с вами по телефону или через
+              мессенджеры, обсуждаем детали заказа</p>
+          </div>
+        </li>
+        <li class="faq__item">
+          <div class="faq__content">
+            <p class="faq__question">Можно ли расписать свою вещь</p>
+            <p class="faq__answer">Мы получаем вашу заявку на кастом, связываемся с вами по телефону или через
+              мессенджеры, обсуждаем детали заказа</p>
+          </div>
+        </li>
+        <li class="faq__item">
+          <div class="faq__content">
+            <p class="faq__question">Как стирать кастомную одежду</p>
+            <p class="faq__answer">Мы получаем вашу заявку на кастом, связываемся с вами по телефону или через
+              мессенджеры, обсуждаем детали заказа</p>
+          </div>
+        </li>
+        <li class="faq__item">
+          <div class="faq__content">
+            <p class="faq__question">С какими видами ткани вы работаете</p>
+            <p class="faq__answer">Мы получаем вашу заявку на кастом, связываемся с вами по телефону или через
+              мессенджеры, обсуждаем детали заказа</p>
+          </div>
+        </li>
+        <li class="faq__item">
+          <div class="faq__content">
+            <p class="faq__question">Какую краску вы используете</p>
+            <p class="faq__answer">Мы получаем вашу заявку на кастом, связываемся с вами по телефону или через
+              мессенджеры, обсуждаем детали заказа</p>
+          </div>
         </li>
       </ul>
-    </div>
-    <div class="video__controls controls">
-      <button class="controls__button controls__button--prev" data-target="video.prev">
-        <span class="controls__inner" aria-label="Назад"></span>
-      </button>
-      <button class="controls__button controls__button--next" data-target="video.next">
-        <span class="controls__inner" aria-label="Вперед"></span>
-      </button>
-    </div>
-    </div>
-  </section>
-  <section class="faq" id="faq">
-    <h2 class="faq__title">Ответы на самые частые вопросы</h2>
-    <ul class="faq__list">
-      <li class="faq__item">
-        <div class="faq__content">
-          <p class="faq__qustion">Как ухаживать за вещью с рисунком</p>
-          <p class="faq__answer">*************************</p>
+    </section>
+    <section class="order" id="order">
+      <div class="order__content">
+        <h2 class="order__title">Планируешь сделать подарок к Новому году?</h2>
+        <p class="order__description description">Получи скидку 10% при заказе до 20 декабря включительно</p>
+        <form class="order__form form">
+          <div class="form__field field field--order">
+            <label for="phone" class="field__label field__label--phone"><span
+                class="visually-hidden">Телефон</span></label>
+            <input required type="tel" placeholder="Номер телефона" name="Телефон" id="phone"
+              class=" field__input field__input--phone">
+          </div>
+          <button class="form__button button">
+            <span class="button__inner"><span>Получить скидку</span></span>
+          </button>
+          <div class="form__callback">
+            <p class="form__text">Или свяжитесь с нами:</p>
+            <ul class="form__social social">
+              <li class="social__item social__item--whatsapp social__item--ws-form">
+                <a href="#">
+                  <svg>
+                    <use xlink:href="img/sprites/sprite.svg#icon-ws"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item social__item--instagram social__item--inst-form">
+                <a href="#">
+                  <svg>
+                    <use xlink:href="img/sprites/sprite.svg#icon-inst"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </form>
+      </div>
+      <div class="order__media">
+        <picture>
+          <source type="image/webp" srcset="../img/sale-desktop.webp">
+          <source media="(min-width: 1280px)" srcset="../../sale-desktop.jpg">
+          <img src="../img/sale.jpg" alt="order" class="order__img">
+        </picture>
+        <div class="order__sale sale gradient-title">
+          <p class="order__price"><span>10%</span></p>
         </div>
-      </li>
-      <li class="faq__item">
-        <div class="faq__content">
-          <p class="faq__qustion">От чего зависит срок выполнения заказа</p>
-          <p class="faq__answer">*************************</p>
+      </div>
+    </section>
+    <section class="cooperate" id="cooperate">
+      <div class="cooperate__block">
+        <img src="../img/t-shirt-cooperate.svg" alt="t-shirt" class="cooperate__image image--global">
+        <p class="cooperate__text">У вас свой магазин одежды, шоурум, или бутик, и вы хотите создавать коллекции с
+          ручной росписью?</p>
+      </div>
+      <div class="cooperate__inner">
+        <div class="cooperate__content">
+          <h2 class="cooperate__title gradient-title">Наши художники исполнят все ваши задумки!</h2>
+          <p class="cooperate__description description">Для сотрудничества оставляйте заявку и мы с вами обязательно
+            свяжемся</p>
         </div>
-      </li>
-      <li class="faq__item">
-        <div class="faq__content">
-          <p class="faq__qustion">Можно ли расписать свою вещь</p>
-          <p class="faq__answer">*************************</p>
+        <div class="cooperate__wrapper">
+          <form class="cooperate__form form">
+            <div class="cooperate__field">
+              <div class="form__field field field--cooperate">
+                <label for="phone" class="field__label field__label--phone field__label--cooperate"><span
+                    class="visually-hidden">Телефон</span></label>
+                <input required type="tel" placeholder="Номер телефона" name="Телефон" id="phone"
+                  class=" field__input field__input--phone field__input--cooperate">
+              </div>
+              <div class="form__field field field--town">
+                <label for="town" class="field__label field__label--phone field__label--town"><span
+                    class="visually-hidden">Город</span></label>
+                <input required type="town" placeholder="Город" name="Город" id="town" list="town"
+                  class=" field__input field__input--town">
+              </div>
+            </div>
+            <div class="form__field field field--shop">
+              <label for="shop" class="field__label field__label--phone field__label--shop"><span
+                  class="visually-hidden">Название вашего магазина</span></label>
+              <input required type="shop" placeholder="Название вашего магазина" name="Название вашего магазина"
+                id="shop" list="shop" class="field__input field__input--shop">
+            </div>
+            <div class="form__field field field--text">
+              <label for="text" class="field__label field__label--phone field__label--text"><span
+                  class="visually-hidden">Какие коллекции хотели бы создать?</span></label>
+              <textarea class="field__input field__textarea" name="text" id="text"
+                placeholder="Какие коллекции хотели бы создать"></textarea>
+            </div>
         </div>
-      </li>
-      <li class="faq__item">
-        <div class="faq__content">
-          <p class="faq__qustion">Как стирать кастомную одежду</p>
-          <p class="faq__answer">*************************</p>
+        <button class="form__button button button--cooperate">
+          <span class="button__inner"><span>Сотрудничать с нами</span>
+        </button>
+        </form>
+      </div>
+      <div class="cooperate__picture">
+        <picture>
+          <source type="image/webp" srcset="../img/cooperate-image-desktop.webp">
+          <source media="(min-width: 1280px)" srcset="../../cooperate-image-desktop.jpg">
+          <img src="../img/cooperate-image.jpg" alt="cooperate" class="cooperate__img">
+        </picture>
+      </div>
+      <div class="work">
+        <div class="work__content">
+          <img src="../img/painter.svg" alt="painter" class="work__image image--global">
+          <p class="work__text">Ты художник, умеющий рисовать на одежде или желаешь этому научиться?</p>
         </div>
-      </li>
-      <li class="faq__item">
-        <div class="faq__content">
-          <p class="faq__qustion">С какими видами ткани вы работаете</p>
-          <p class="faq__answer">*************************</p>
+        <div class="help">
+          <div class="help__content">
+            <img src="../img/help.svg" alt="help" class="help__image image--global">
+            <p class="help__text">Хочешь работать в нашей команде и создавать уникальные принты для людей?</p>
+          </div>
         </div>
-      </li>
-      <li class="faq__item">
-        <div class="faq__content">
-          <p class="faq__qustion">Какую краску вы используете</p>
-          <p class="faq__answer">*************************</p>
+    </section>
+    <section class="cooperate">
+      <div class="cooperate__inner cooperate__inner--two">
+        <div class="cooperate__content">
+          <h2 class="cooperate__title cooperate__title--two gradient-title">Заполняй <br>заявку и мы обязательно <br>с
+            тобой свяжемся</h2>
         </div>
+        <div class="cooperate__wrapper cooperate__wrapper--two">
+          <form class="cooperate__form form">
+            <div class="cooperate__field">
+              <div class="form__field field field--cooperate field--two">
+                <label for="phone" class="field__label field__label--phone field__label--cooperate"><span
+                    class="visually-hidden">Телефон</span></label>
+                <input required type="tel" placeholder="Номер телефона" name="Телефон" id="phone"
+                  class=" field__input field__input--phone field__input--cooperate">
+              </div>
+              <div class="form__field field field--town field--two">
+                <label for="town" class="field__label field__label--phone field__label--town"><span
+                    class="visually-hidden">Город</span></label>
+                <input required type="town" placeholder="Город" name="Город" id="town" list="town"
+                  class=" field__input field__input--town">
+              </div>
+            </div>
+            <div class="form__field field field--link">
+              <label for="link" class="field__label field__label--phone field__label--link"><span
+                  class="visually-hidden">Примеры работ, если есть</span></label>
+              <input required type="link" placeholder="Примеры работ, если есть" name="Примеры работ, если есть"
+                id="link" list="link" class="field__input field__input--link">
+            </div>
+            <div class="form__field field field--text">
+              <label for="text" class="field__label field__label--phone field__label--text"><span
+                  class="visually-hidden">Расскажи немного о себе</span></label>
+              <textarea class="field__input field__textarea field__textarea--two" name="text" id="text"
+                placeholder="Расскажи немного о себе"></textarea>
+            </div>
+            <div class="form__checkbox-wrapper">
+              <div class="form__checkbox-title">
+                <p class="form__checkbox-text">Опыт рисования на одежде:</p>
+              </div>
+              <div class="form__checkbox">
+                <div class="form__radio">
+                  <input type="checkbox" name="checkbox" id="checkbox" class="form__radio-item">
+                  <label for="checkbox" class="form__radio-checkbox">Есть опыт</label>
+                </div>
+                <div class="form__radio">
+                  <input type="checkbox" name="checkbox" id="checkbox" class="form__radio-item">
+                  <label for="checkbox" class="form__radio-checkbox">Нет опыта</label>
+                </div>
+              </div>
+            </div>
+        </div>
+        <button class="form__button button button--cooperate">
+          <span class="button__inner"><span>Сотрудничать с нами</span>
+        </button>
+        </form>
+      </div>
+      <div class="cooperate__picture">
+        <picture>
+          <source type="image/webp" srcset="../img/cooperate-image2-desktop.webp">
+          <source media="(min-width: 1280px)" srcset="../../cooperate-image2-desktop.jpg">
+          <img src="../img/cooperate-image2.jpg" alt="cooperate" class="cooperate__img cooperate__img--two">
+        </picture>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <a href="#" class="footer__logo logo">
+      <img src="../img/logo-footer.svg" alt="logo" class="footer__img">
+    </a>
+    <ul class="footer__contacts">
+      <li class="footer__contact footer__contact--email">Eplatooonova@gmail.com</li>
+      <li class="footer__contact footer__contact--time">9.00 - 18.00 без выходных</li>
+      <li class="footer__contact footer__contact--phone">+7 916 674-12-38</li>
+    </ul>
+    <ul class="footer__list">
+      <li class="footer__item">ИП Платонова Елена Иванова © 2020</li>
+      <li class="footer__item"><span>Политика конфиденциальности</span></li>
+      <li class="footer__item footer__item--dev"><a href="#" class="footer__dev"><span>Разработка веб-сайтов</span></a>
       </li>
     </ul>
-  </section>
-  <section class="order" id="order">
-    <div class="order__content">
-      <h2 class="order__title">Планируешь сделать подарок к Новому году?</h2>
-      <p class="order__description description">Получи скидку 10% при заказе до 20 декабря включительно</p>
-    </div>
-    <form class="order__form form">
-      <div class="form__field field field--order">
-        <label for="phone" class="field__label field__label--phone"><span class="visually-hidden">Телефон</span></label>
-        <input required type="tel" placeholder="Номер телефона" name="Телефон" id="phone"
-          class=" field__input field__input--phone">
-      </div>
-      <button class="form__button button">
-        <span class="button__inner"><span>Получить скидку</span></span>
-      </button>
-      <div class="form__callback">
-        <p class="form__text">Или свяжитесь с нами:</p>
-        <ul class="form__social social">
-          <li class="social__item social__item--whatsapp social__item--ws-form">
-            <a href="#">
-              <svg>
-                <use xlink:href="img/sprites/sprite.svg#icon-ws"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social__item social__item--instagram social__item--inst-form">
-            <a href="#">
-              <svg>
-                <use xlink:href="img/sprites/sprite.svg#icon-inst"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </form>
-    </div>
-    <div class="order__media">
-      <picture>
-        <source type="image/webp" srcset="../img/sale.webp">
-        <img src="../img/sale.jpg" alt="order" class="order__img">
-      </picture>
-      <div class="order__sale sale gradient-title">
-        <p class="order__price"><span>10%</span></p>
-      </div>
-    </div>
-  </section>
-
-
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-  <script src="js/vendor.js"></script>
-  <script src="js/general.js"></script>
+    <ul class="footer__social social">
+      <li class="social__item social__item--whatsapp social__item--ws-footer">
+        <a href="#">
+          <svg>
+            <use xlink:href="img/sprites/sprite.svg#icon-ws"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="social__item social__item--instagram social__item--inst-footer">
+        <a href="#">
+          <svg>
+            <use xlink:href="img/sprites/sprite.svg#icon-inst"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+  </footer>
+  <div class="overlay overlay--active"></div>
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <script src="js/bundle.js"></script>
 </body>
 
 </html>

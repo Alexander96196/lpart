@@ -1,0 +1,134 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: #27262b;
+    color: #ffffff;
+}
+
+.footer__logo {
+    padding: 80px 129px 58px 129px;
+}
+
+.footer__img {
+    width: 102px;
+    height: 62px;
+}
+
+.footer__contacts {
+    @include list-reset;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer__contact {
+    display: flex;
+    align-items: center;
+
+    &:not(:last-child) {
+        margin-bottom: 46px;
+    }
+
+    &--phone {
+        margin-bottom: 58px;
+    }
+
+    &::before {
+        @include pseudo;
+        width: 20px;
+        height: 20px;
+        margin-right: 20px;
+        background-size: contain;
+    }
+
+    &--email {
+        &::before {
+            background-image: url("../../img/email.svg");
+        }
+    }
+
+    &--time {
+        &::before {
+            background-image: url("../../img/time.svg");
+        }
+    }
+    &--phone {
+        &::before {
+            background-image: url("../../img/phone-footer.svg");
+        }
+    }
+}
+
+.footer__item {
+    @include list-reset;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.footer__item {
+    margin: 0;
+
+    &:not(:last-child) {
+        margin-bottom: 30px;
+    }
+
+    &--dev {
+        margin-bottom: 58px;
+    }
+
+    span {
+        text-decoration: underline;
+    }
+}
+
+.footer__item--dev {
+    position: relative;
+    padding-left: 60px;
+
+    &::before {
+        content: "";
+        position: absolute;
+        width: 60px;
+        height: 14px;
+        left: 10px;
+        background-image: url("../../img/inalion.svg");
+        background-repeat: no-repeat;
+    }
+}
+
+.footer__social {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 93px;
+}
+
+@media (min-width: 1280px) {
+    .footer__contacts {
+        flex-direction: row;
+        align-items: baseline;
+    }
+
+    .footer__contact:not(:last-child) {
+        margin-right: 60px;
+    }
+
+    .footer__list {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .footer__item:not(:last-child) {
+        margin-right: 48px;
+    }
+
+    .footer__dev {
+        margin-left: 9px;
+    }
+
+    .footer__social {
+        margin-bottom:  47px;
+    }
+}

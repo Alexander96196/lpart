@@ -16,10 +16,51 @@
     position: relative;
     margin-bottom: 57px;
 
-    &::after{
+    &::after {
         width: 51px;
         top: 33px;
         left: -21px;
     }
 }
 
+@media (min-width: 768px) {
+    .idea {
+        padding: 0 40px;
+    }
+
+    .idea__description {
+        &::after {
+            top: 17px;
+        }
+    }
+}
+
+@media (min-width: 1280px) {
+    .idea {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .idea__content {
+        margin-right: 94px;
+    }
+
+    .idea__title {
+        font-size: 40px;
+        width: 531px;
+
+        br {
+            content: "";
+        }
+    }
+
+    .idea__description {
+         font-size: 18px;
+        line-height: 21px;
+        width: 454px;
+
+        br {
+            content: "";
+        }
+    }
+}

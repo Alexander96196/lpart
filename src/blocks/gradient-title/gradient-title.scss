@@ -6,3 +6,9 @@
     @include textGradient;
     margin-bottom: 39px;
 }
+
+@media (min-width: 1280px) {
+    .gradient-title {
+        font-size: 64px;
+    }
+}

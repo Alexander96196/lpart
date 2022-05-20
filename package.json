@@ -69,6 +69,10 @@
     "src/blocks/**/*.scss"
   ],
   "dependencies": {
-    "jquery": "^3.6.0"
+    "jquery": "^3.6.0",
+    "nativejs-select": "^1.0.7",
+    "react-native-element-dropdown": "^1.8.11",
+    "slick-carousel": "^1.8.1",
+    "swiper": "^8.1.4"
   }
 }

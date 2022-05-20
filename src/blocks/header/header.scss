@@ -1,7 +1,7 @@
 .header {
     display: flex;
     flex-wrap: wrap;
-   /*  position: absolute; */
+    /*  position: absolute; */
     justify-content: space-between;
     width: 100%;
     padding: 23px 20px 0 31px;
@@ -53,5 +53,42 @@
         &:not(:last-child) {
             margin-right: 8px;
         }
+    }
+}
+
+@media (min-width: 1280px) {
+    .header {
+        justify-content: normal;
+        align-items: center;
+        flex-wrap: nowrap;
+        margin-bottom: 97px;
+        padding: 20px 0 0 0;
+    }
+
+    .header__logo {
+        width: 102px;
+        margin-right: 96px;
+    }
+
+    .header__contacts {
+        width: auto;
+        display: flex;
+        align-items: baseline;
+        flex-direction: row-reverse;
+        position: relative;
+        z-index: 10;
+        padding: 8px 10px;
+        padding-right: 26px;
+        background: #ffffff;
+        border-radius: 20px;
+    }
+
+    .header__social {
+        margin: 0;
+        margin-right: 18px;
+    }
+
+    .header__phone {
+        margin: 0;
     }
 }

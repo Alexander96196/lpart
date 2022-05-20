@@ -1,0 +1,28 @@
+.help__content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.help__text {
+    font-family: "Circe";
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 99%;
+}
+
+@media (min-width: 1280px) {
+    .help__content {
+        flex-direction: row-reverse;
+    }
+
+    .help__text {
+        width: 620px;
+        text-align: left;
+    }
+
+    .help__image {
+        margin-left: 75px;
+    }
+}

@@ -52,4 +52,14 @@
             fill: $g-main;
         }
     }
+
+    &--cooperate {
+        width: 281px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .button {
+        margin: 0;
+    }
 }

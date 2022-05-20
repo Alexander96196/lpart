@@ -8,6 +8,26 @@
     &--order {
         margin-bottom: 47px;
     }
+
+    &--cooperate {
+        margin-bottom: 30px;
+    }
+
+    &--town {
+        margin-bottom: 30px;
+    }
+
+    &--shop {
+        margin-bottom: 30px;
+    }
+
+    &--text {
+        margin-bottom: 47px;
+    }
+
+    &--link {
+        margin-bottom: 30px;
+    }
 }
 
 .field__input {
@@ -19,6 +39,26 @@
     font-size: 24px;
     line-height: 28px;
     padding-left: 68px;
+
+    &--cooperate {
+        height: 46px;
+    }
+
+    &--town {
+        height: 46px;
+    }
+
+    &--shop {
+        height: 46px;
+    }
+
+    &--link {
+        height: 46px;
+    }
+
+    &::placeholder {
+        font-size: 18px;
+    }
 }
 
 .field__label {
@@ -36,5 +76,94 @@
             background-image: url("../../img/phone.svg");
             transform: translateY(-50%);
         }
+    }
+
+    &--cooperate {
+        &::before {
+            width: 20px;
+            height: 20px;
+            background-image: url("../../img/phone-footer.svg");
+        }
+    }
+
+    &--town {
+        &::before {
+            width: 20px;
+            height: 20px;
+            background-image: url("../../img/maps-flag.svg");
+        }
+    }
+
+    &--shop {
+        &::before {
+            width: 20px;
+            height: 20px;
+            background-image: url("../../img/man-user.svg");
+        }
+    }
+
+    &--text {
+        &::before {
+            width: 20px;
+            height: 20px;
+            top: 25px;
+            background-image: url("../../img/pen.svg");
+        }
+    }
+
+    &--link {
+        &::before {
+            width: 20px;
+            height: 20px;
+            top: 25px;
+            background-image: url("../../img/link.svg");
+        }
+    }
+
+    &--checkbox {
+        display: flex;
+    }
+}
+
+.field__textarea {
+    height: 224px;
+    padding: 13px 33px 169px 68px;
+    resize: none;
+    overflow: hidden;
+
+    &::placeholder {
+        line-height: 21px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .field {
+        width: 239px;
+
+        &--shop {
+            width: 100%;
+        }
+
+        &--text {
+            width: 100%;
+        }
+
+        &--link {
+            width: 100%;
+        }
+    }
+
+    .field--two {
+        width: 276px;
+    }
+
+    .field__input {
+        height: 46px;
+    }
+
+    .field__label--phone::before {
+        width: 20px;
+        height: 20px;
+        background-size: cover;
     }
 }

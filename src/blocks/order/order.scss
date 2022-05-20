@@ -24,12 +24,7 @@
 
 .order__sale {
     font-family: "Gilroy";
-    line-height: 58px;;
-}
-
-.order__price {
-    display: flex;
-    justify-content: center;
+    line-height: 58px;
 
     &::before {
         content: "";
@@ -40,5 +35,103 @@
         left: 31%;
         background: #ffffff;
         border-radius: 50%;
+    }
+}
+
+.order__price {
+    display: flex;
+    justify-content: center;
+
+    &::before {
+        content: "";
+        display: block;
+        background-repeat: no-repeat;
+        background-position: center;
+        position: absolute;
+        width: 184px;
+        height: 63px;
+        background: linear-gradient(
+            89.23deg,
+            #fcaf45 0.66%,
+            #f77737 20.96%,
+            #fd1d1d 41.27%,
+            #c13584 61.57%,
+            #833ab4 82.41%,
+            #405de6 103.25%
+        );
+        filter: blur(52px);
+        z-index: -1;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        width: 48px;
+        height: 48px;
+        left: 25%;
+        background-image: url("../../img/fire.svg");
+    }
+
+    span {
+        top: 1px;
+    }
+}
+
+@media (min-width: 768px) {
+    .order {
+        padding: 0 40px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .order {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 0 0 162px;
+        margin-bottom: 172px;
+    }
+
+    .order__title {
+        font-size: 40px;
+        width: 443px;
+    }
+
+    .order__description {
+        font-size: 18px;
+        line-height: 21px;
+        width: 289px;
+
+        &::after {
+            left: 142px;
+        }
+    }
+
+    .order__img {
+        width: 675px;
+        border-radius: 249.5px 0px 0px 249.5px;
+    }
+
+    .order__sale {
+        position: absolute;
+        top: -11%;
+        left: 56%;
+
+        &::before {
+            z-index: 10;
+        }
+    }
+
+    .order__price {
+        &::before {
+            z-index: 1;
+            top: 130%;
+            left: 0;
+        }
+
+        &::after {
+            top: 130%;
+            left: 14%;
+            z-index: 10;
+        }
     }
 }

@@ -31,3 +31,62 @@
 .video__play {
     border: none;
 }
+
+@media (min-width: 768px) {
+    .video {
+        padding: 0 40px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .video__top {
+        position: relative;
+        display: flex;
+        margin-bottom: 114px;
+    }
+
+    .video__bottom {
+        position: relative;
+        display: flex;
+        flex-direction: row-reverse;
+        margin-bottom: 160px;
+    }
+
+    .video__content {
+        width: 497px;
+
+        &--left {
+            margin-right: 100px;
+        }
+
+        &--right {
+            margin-left: 100px;
+        }
+    }
+
+    .video__text {
+        width: 378px;
+
+        br {
+            content: "";
+        }
+    }
+
+    .video__item {
+        width: 606px;
+    }
+
+    .video__controls {
+        position: absolute;
+
+        &--right {
+            top: 390px;
+            left: 105px ;
+        }
+
+        &--left {
+            top: 338px;
+            right: 105px;
+        }
+    }
+}

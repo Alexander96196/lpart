@@ -1,4 +1,4 @@
-.select {
+/* .select {
     position: relative;
     padding: 1px;
     background: $g-main;
@@ -18,3 +18,28 @@
     padding-left: 68px;
     background: #ffffff;
 }
+
+.select__input::before {
+    content: "";
+    display: block;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    top: 50%;
+    left: 25px;
+    background-image: url("../../img/t-shirt-select.svg");
+    transform: translateY(-50%);
+}
+
+
+@media (min-width: 1280px) {
+    .select {
+        width: 239px;
+    }
+
+    .select__input {
+        height: 46px;
+    }
+} */

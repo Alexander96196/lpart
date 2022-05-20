@@ -60,7 +60,6 @@
 .promo__slider {
     @include list-reset;
     margin-bottom: 57px;
-    padding: 0 20px;
 }
 
 .promo__img {
@@ -74,6 +73,11 @@
     padding: 11px 18px 11px 57px;
     margin: 0 38px;
     margin-bottom: 68px;
+
+    &:hover {
+        background: $g-main;
+        color: #ffffff;
+    }
 }
 
 .promo__blur {
@@ -103,5 +107,135 @@
         height: 30px;
         left: 53px;
         background-image: url("../../img/gift-box.svg");
+    }
+
+    &:hover {
+        &::before {
+            background-image: url("../../img/gift-box@hover.svg");
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .promo__text {
+        text-align: center;
+    }
+
+    .promo__title {
+        font-size: 64px;
+        padding: 0 55px;
+    }
+
+    .promo__paragraph {
+        text-align: center;
+
+        &::after {
+            left: 131px;
+        }
+    }
+
+    .promo__gift {
+        width: 266px;
+        margin: 0 auto;
+    }
+
+    .promo__blur {
+        &::before {
+            left: 264px;
+        }
+
+        &::after {
+            left: 246px;
+        }
+    }
+}
+
+@media (min-width: 1280px) {
+    .promo {
+        position: relative;
+    }
+
+    .promo__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 73px;
+    }
+
+    .promo__slider {
+        position: absolute;
+        top: -180px;
+        left: 635px;
+        @include page-wrapper;
+    }
+
+    .promo__img {
+        width: 626px;
+        border-radius: 0px 0px 0px 309px;
+    }
+
+    .promo__text {
+        text-align: left;
+        padding: 0;
+    }
+
+    .promo__title {
+        width: 462px;
+        text-align: left;
+        padding: 0;
+
+        br {
+            display: none;
+        }
+    }
+
+    .promo__paragraph {
+        padding: 0;
+        padding-left: 16px;
+        width: 254px;
+        text-align: left;
+
+        &::after {
+            top: 20px;
+            left: -13px;
+        }
+    }
+
+    .promo__title--holiday {
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            width: 52px;
+            height: 52px;
+            left: 220px;
+            bottom: 0;
+            background-image: url("../../img/gift-box-desk.svg");
+        }
+    }
+
+    .promo__gift {
+        position: absolute;
+        width: 283px;
+        right: 18px;
+        bottom: 190px;
+        z-index: 1;
+    }
+
+    .promo__blur {
+        &::before {
+            left: 10px;
+        }
+
+        &::after {
+            left: 0;
+        }
+    }
+
+    .promo__pagination {
+        justify-content: center;
+        max-width: 340px;
+        margin-left: 900px;
     }
 }
